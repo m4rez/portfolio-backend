@@ -31,7 +31,6 @@ public class EmailController {
     public ResponseEntity<String> sendCV(@RequestParam String emailName) throws Exception {
         emailService.sendCV(emailName, "CV","",pathToCV,"Marek Zezula CV.pdf" );
         System.out.println(pathToCV);
-        System.out.println("test");
         return ResponseEntity.ok("CV úspěšně odesláno");
     }
 }
